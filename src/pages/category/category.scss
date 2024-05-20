@@ -1,0 +1,129 @@
+#category__hero {
+  background: #f4f0f8;
+  padding: 80px 0px;
+}
+
+.category {
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 80px 0px;
+  }
+  &__hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    h1 {
+      font-size: 56px;
+    }
+    p {
+      display: -webkit-box;
+      line-clamp: 3;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+    }
+  }
+  &__body__cards,
+  .loading__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+  &__card,
+  .loading__card {
+    display: flex;
+    gap: 50px;
+    width: 100%;
+    height: 312px;
+    &__img,
+    .loading__img {
+      width: 40%;
+      background: gray;
+      height: 100%;
+      border-radius: 10px;
+    }
+    img {
+      width: 100%;
+      object-fit: contain;
+      height: 100%;
+    }
+    &__info,
+    .loading__info {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+
+  input {
+    width: 100%;
+    height: 76px;
+    margin: 57px 0px;
+    border: 1px solid black;
+    outline: none;
+    padding: 0px 24px;
+    color: black;
+    font-size: 20px;
+    border-radius: 2px;
+  }
+}
+
+.loading__text {
+  width: 90%;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.loading__text:nth-child(2) {
+  width: 80%;
+}
+
+.loading__text:nth-child(3) {
+  width: 70%;
+}
+
+@media (max-width: 780px) {
+  .category__card,
+  .loading__card {
+    flex-direction: column;
+    height: 700px;
+    &__img,
+    .loading__img,
+    .loading__info,
+    &__info {
+      width: 100%;
+      height: 50%;
+    }
+  }
+}
+
+.see__more-btn {
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  border: 1px solid #ffd050;
+  background: #ffd050;
+  color: white;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+.see__more-btn:hover {
+  opacity: 0.7;
+}
+
+.bg__animation {
+  background: linear-gradient(90deg, #ddd, #aaa, #ddd) !important;
+  background-size: 200% !important;
+  animation: bgMove 1s linear 0s infinite !important;
+}
+
+@keyframes bgMove {
+  to {
+    background-position: 200% !important;
+  }
+}

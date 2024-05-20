@@ -1,0 +1,43 @@
+.footer {
+    padding: 54px 0;
+    background-color: #232536;
+    color: #6d6e76;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 28px;
+        color: #ffffffc5;
+    }
+
+    &__right {
+        display: flex;
+        gap: 26px;
+    }
+
+    &__icon {
+        transition: .4s;
+        font-size: 24px;
+
+        &:hover {
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .footer {
+        &__container {
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.single__card,
+.single__loading__card {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 50px 0px;
+  img,
+  .singleLoading__img {
+    width: 100%;
+    height: 582px;
+    object-fit: cover;
+  }
+  &__info,
+  .singleLoading__info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 20%;
+    &__text {
+      display: -webkit-box;
+      line-clamp: 4;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 4;
+      overflow: hidden;
+      color: #6d6e76;
+    }
+  }
+}
+
+.singleLoading__text {
+  width: 90%;
+  height: 50px;
+  border-radius: 10px;
+}
+
+
+
+@media (max-width: 750px) {
+  .single__card__info,
+  .singleLoading__info {
+    padding: 20px 5%;
+  }
+}

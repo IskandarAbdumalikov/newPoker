@@ -1,0 +1,12 @@
+.sidebarheader {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    font-size: 24px;
+
+    button {
+        border: none;
+        background-color: #fff;
+        font-size: 24px;
+    }
+}
